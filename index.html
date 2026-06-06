@@ -7,62 +7,121 @@
 <title>Ueno Japan</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+
+*{
     margin:0;
-    background:#f4f6f9;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    line-height:1.7;
     color:#333;
+
+    background-image:
+    linear-gradient(rgba(255,255,255,0.88),
+    rgba(255,255,255,0.88)),
+    url("https://images.unsplash.com/photo-1526481280695-3c4691f241ac");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 header{
-    background:##6664e3;
+    background:rgba(0,0,0,0.65);
     color:white;
     text-align:center;
-    padding:20px 20px;
+    padding:70px 20px;
 }
 
-h1{
-    margin:0;
-    font-size:2em;
+.logo{
+    font-size:3.2rem;
+    font-weight:bold;
+    letter-spacing:10px;
 }
 
-.subtitle{
-    margin-top:10px;
-    opacity:0.8;
+.tagline{
+    margin-top:15px;
+    font-size:1.2rem;
+    opacity:0.9;
 }
 
 .container{
-    max-width:900px;
+    max-width:1000px;
     margin:40px auto;
     padding:20px;
 }
 
 .card{
     background:white;
+    border-radius:16px;
     padding:30px;
-    border-radius:15px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
     margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 h2{
+    margin-bottom:15px;
     color:#1f2937;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
 }
 
 .button{
     display:inline-block;
     background:#2563eb;
     color:white;
-    padding:12px 24px;
     text-decoration:none;
+    padding:12px 25px;
     border-radius:8px;
+    margin-top:10px;
+}
+
+.spots{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.spot{
+    background:#f8f9fa;
+    border-radius:12px;
+    padding:20px;
+}
+
+.spot h3{
+    margin-bottom:10px;
 }
 
 footer{
     text-align:center;
-    padding:30px;
-    color:#777;
+    padding:40px 20px;
+    color:#666;
 }
+
+@media (max-width:768px){
+
+.logo{
+    font-size:2rem;
+    letter-spacing:4px;
+}
+
+header{
+    padding:50px 15px;
+}
+
+}
+
 </style>
 
 </head>
@@ -70,44 +129,89 @@ footer{
 <body>
 
 <header>
-    <h1>Ueno Japan Web</h1>
-<!--
-    <div class="subtitle">
-        Personal Website
-    </div>
--->
+
+<div class="logo">
+UENO JAPAN
+</div>
+
+<div class="tagline">
+Discover Japan Beyond the Guidebooks
+</div>
+
 </header>
 
 <div class="container">
 
-<!--
-<div class="card">
-    <h2>About Me</h2>
-    <p>
-        Welcome to my website.
-        This site was created using GitHub Pages.
-    </p>
+<div class="card hero">
+
+<h2>Welcome to Ueno Japan</h2>
+
+<p>
+Explore the beauty of Japan through travel,
+culture, local food, hidden destinations,
+and unique experiences.
+</p>
+
+<a class="button"
+href="https://www.tiktok.com/@japanueno"
+target="_blank">
+Visit TikTok </a>
+
 </div>
--->
 
 <div class="card">
-    <h2>Links</h2>
-<!--
-    <p>
-        TikTok
-    </p>
--->
-    <a class="button"
-       href="https://www.tiktok.com/@japanueno"
-       target="_blank">
-       To My TikTok Top
-    </a>
+
+<h2>Featured Destinations</h2>
+
+<div class="spots">
+
+<div class="spot">
+<h3>🗼 Tokyo</h3>
+<p>
+Modern city life, amazing food,
+shopping, and iconic landmarks.
+</p>
+</div>
+
+<div class="spot">
+<h3>🏯 Kanazawa</h3>
+<p>
+Historic districts, traditional culture,
+and beautiful gardens.
+</p>
+</div>
+
+<div class="spot">
+<h3>🗻 Mt. Fuji</h3>
+<p>
+Japan's most famous mountain and
+a must-see destination.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>About This Site</h2>
+
+<p>
+Ueno Japan shares travel experiences,
+local discoveries, photography,
+and useful information for visitors
+who want to explore Japan more deeply.
+</p>
+
 </div>
 
 </div>
 
 <footer>
-    © 2026 Ueno Japan
+
+© 2026 Ueno Japan
+
 </footer>
 
 </body>
