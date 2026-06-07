@@ -104,7 +104,28 @@ footer{
 </div>
 
 </div>
+<!-- Counter API ========================= -->
+<div style="
+  display:inline-block;
+  padding:8px 15px;
+  background:#222;
+  color:#00ff88;
+  border-radius:6px;
+  font-family:monospace;">
+訪問者数: <span id="visitor-count">...</span>
+</div>
 
+<script>
+fetch('https://api.countapi.xyz/hit/uenojapanweb-UJ/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-count').textContent = data.value;
+  })
+  .catch(() => {
+    document.getElementById('visitor-count').textContent = 'Error';
+  });
+</script>
+    
 <footer>
     © 2026 Ueno Japan
 </footer>
