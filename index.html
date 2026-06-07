@@ -105,27 +105,7 @@ footer{
 
 </div>
 <!-- Counter API ========================= -->
-<div>
-  訪問者数: <span id="visitor-count">読み込み中...</span>
-</div>
-
-<script>
-fetch('https://api.countapi.xyz/hit/uenojapanweb-UJ/visits')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('HTTP ' + response.status);
-    }
-    return response.json();
-  })
-  .then(data => {
-    document.getElementById('visitor-count').textContent = data.value;
-  })
-  .catch(error => {
-    document.getElementById('visitor-count').textContent =
-      'Error: ' + error.message;
-    console.error(error);
-  });
-</script>
+<img src="https://visitorbadge.io/api/visitors?path=uenojapanweb.github.io%2FUJ&label=訪問者数&labelColor=%23697689&countColor=%23007ec6">
     
 <footer>
     © 2026 Ueno Japan
